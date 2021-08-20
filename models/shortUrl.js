@@ -6,7 +6,7 @@ const shortUrlSchema  = new mongoose.Schema({
          required:true
      },
      short:{
-         type: string,
+         type:String,
          required:true,
          default: shortId.generate
      },
@@ -17,4 +17,4 @@ const shortUrlSchema  = new mongoose.Schema({
      }
 })
 
-modules.export = mongoose.model('ShortUrl' , shortUrlSchema);
+module.export = mongoose.model('ShortUrl' , shortUrlSchema);
